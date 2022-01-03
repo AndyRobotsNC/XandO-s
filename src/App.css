@@ -1,0 +1,27 @@
+.grid-container {
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.cross {
+  background-image: url(../src/images/red-cross-md_0.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nought {
+  background-image: url(../src/images/1200px-Red_circle.svg.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

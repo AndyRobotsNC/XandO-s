@@ -2,6 +2,7 @@ import "./App.css";
 import Heading from "./components/Heading";
 import SymbolSelector from "./components/SymbolSelector";
 import SymbolDisplay from "./components/SymbolDisplay";
+import GameBoard from "./components/GameBoard";
 
 const { useState } = require("react");
 
@@ -19,6 +20,7 @@ function App() {
         className="symbolSelector"
       />
       <SymbolDisplay symbol={symbol} className="symbolDisplay" />
+      <GameBoard symbol={symbol} setSymbol={setSymbol} />
     </div>
   );
 }
