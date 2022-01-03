@@ -1,6 +1,12 @@
 const GameBoard = ({ symbol, setSymbol }) => {
   const addSymbol = (event) => {
-    if (symbol === "X") {
+    const gridItemClassList = event.target.classList.value.split(" ");
+    console.log(gridItemClassList);
+    if (
+      gridItemClassList.includes("cross") ||
+      gridItemClassList.includes("nought")
+    ) {
+    } else if (symbol === "X") {
       event.target.classList.add("cross");
       setSymbol("O");
     } else if (symbol === "O") {
